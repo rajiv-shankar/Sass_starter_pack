@@ -1,5 +1,44 @@
-$body-bg:blue;
+// variables
 
-body{
+$body-bg: #fff;
+$main-font: 'Arial';
+
+$color-1: teal;
+$color-2: green;
+$color-light: silver;
+$color-dark: gray;
+
+$container: 960px;
+
+// Functions
+@function set-text-color(){
+
+}
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
   background: $body-bg;
+  font-family: $main-font;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+}
+
+.container {
+  max-width: $container;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header#main-header {
+  padding: 1em;
+  background: $color-1;
 }
