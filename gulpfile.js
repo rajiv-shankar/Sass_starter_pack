@@ -5,7 +5,7 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 
-// Task 1: Compile Sass ('sass')  <<< THIS TASK IS NOT RUNNING
+// Task 1: Compile Sass ('sass')
 gulp.task('sass', function(){
   return gulp.src(['src/scss/*.scss'])  // look here for sass files and
     .pipe(sass())

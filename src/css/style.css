@@ -9,7 +9,7 @@ body {
 
 a {
   text-decoration: none;
-  color: gray; }
+  color: black; }
 
 .container {
   max-width: 960px;
@@ -18,4 +18,45 @@ a {
 
 header#main-header {
   padding: 1em;
-  background: teal; }
+  background: teal;
+  color: #ffffff; }
+  header#main-header h1 {
+    font-size: 40px; }
+
+nav#main-nav {
+  background: green;
+  height: 40px; }
+  nav#main-nav ul {
+    list-style: none;
+    padding-top: 10px; }
+  nav#main-nav li {
+    display: inline; }
+  nav#main-nav a {
+    color: #fff;
+    padding-right: 20px; }
+    nav#main-nav a:hover {
+      color: #ccc; }
+
+.section, #section-a, #section-b {
+  padding: 20px; }
+  .section h1, #section-a h1, #section-b h1 {
+    margin-bottom: 30px; }
+
+#section-a {
+  background: silver;
+  color: #000000; }
+
+#section-b {
+  background: black;
+  color: #ffffff; }
+
+.button, .button-a, .button-b {
+  padding: 10px 15px; }
+
+.button-a {
+  background: #004d4d;
+  color: #ffffff; }
+
+.button-b {
+  background: #00b300;
+  color: #ffffff; }

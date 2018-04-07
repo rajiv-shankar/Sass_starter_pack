@@ -1,19 +1,5 @@
-// variables
-
-$body-bg: #fff;
-$main-font: 'Arial';
-
-$color-1: teal;
-$color-2: green;
-$color-light: silver;
-$color-dark: gray;
-
-$container: 960px;
-
-// Functions
-@function set-text-color(){
-
-}
+@import 'variables';
+@import 'functions';
 
 // reset
 * {
@@ -41,4 +27,68 @@ a {
 header#main-header {
   padding: 1em;
   background: $color-1;
+  color: set-text-color($color-1);
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+nav#main-nav {
+  background: $color-2;
+  height:40px;
+
+  ul {
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    color: #fff;
+    padding-right: 20px;
+
+    &:hover{
+      color: #ccc;
+    }
+  }
+}
+
+.section {
+  padding: $section-padding;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+
+#section-a {
+  @extend .section;
+  background: $color-light;
+  color: set-text-color($color-light);
+}
+
+#section-b {
+  @extend .section;
+  background: $color-dark;
+  color: set-text-color($color-dark);
+}
+
+.button {
+  padding: 10px 15px;
+}
+
+.button-a {
+  @extend .button;
+  background: darken($color-1, 10%);
+  color: set-text-color($color-1);
+}
+
+.button-b {
+  @extend .button;
+  background: lighten($color-2, 10%);
+  color: set-text-color($color-2);
 }
